@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Pokedex</title>
+    <!-- Tab icon -->
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="pokemon.css">
+    <link href="http://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="overlay"></div>
+	<div class = "top">
+		<h1>PokéDex</h1>
+		<div class="pika-gif"></div>
+		<div class="search-box">
+			<img src="images/background.png" class="top-bg">
+			<span class="material-icons-outlined corner">search</span>
+			<input id="search" class="search" type="text" placeholder="Search" />
+		</div>
+	</div>
+	<div class="gif-searchbox" onclick="openGifSearch()">
+		<div id="arrow-left" class="arrow"><span class="material-icons-outlined" style="font-size: 36px">chevron_right</span></div>
+		<div id="arrow-right" class="arrow"><span class="material-icons-outlined" style="font-size: 36px">chevron_right</span></div>
+	</div>
+	<div class="gif-search">
+		<input id="search" class="search" type="text" placeholder="Search" />
+		<span class="material-icons-outlined corner">search</span>
+		<div class="gif-container"></div>
+	</div>
+	<hr>
+	<div id="poke_container" class="poke-container"></div>
+    <script src="pokemon.js"></script>
+</body>
+</html>
